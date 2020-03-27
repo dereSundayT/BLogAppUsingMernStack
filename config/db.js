@@ -1,11 +1,9 @@
 //::1
 const mongoose = require('mongoose');
-
 //::2
 //bring in the config package
 const config = require('config');
 const db = config.get('mongoURI');
-
 //::3
 const connectDB = async () => {
     try {
@@ -23,6 +21,5 @@ const connectDB = async () => {
         process.exit(1);  
     }
 }
-
 //::4
 module.exports = connectDB;

@@ -8,7 +8,7 @@ const app = express();
 //::Connect Database
 connectDB();
 //init MiddleWare
-// BodyParser
+// BodyParser:gives us room to have access to our form data
 app.use(express.json({extended:false}));
 //Test
 app.get('/',(req,res)=> res.send('Api Is Running'))
